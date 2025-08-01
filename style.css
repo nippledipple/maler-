@@ -1,0 +1,46 @@
+
+body {
+  font-family: sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.karte {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+}
+.initialen {
+  position: absolute;
+  font-size: 8rem;
+  opacity: 0.08;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 40px;
+}
+.adminpanel-link {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: blue;
+  font-size: 0.9rem;
+}
+#adminpanel input {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}

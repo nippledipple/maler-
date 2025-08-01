@@ -1,0 +1,11 @@
+
+{
+  "admin": {
+    "name": "Merlin Wolfermann",
+    "password": "MalerBauer2025!",
+    "role": "admin",
+    "urlaub": 20,
+    "stunden": 120,
+    "ueberstunden": 10
+  }
+}

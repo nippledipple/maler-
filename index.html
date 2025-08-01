@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mitarbeiter Login – Malerbetrieb Bauer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="login-box" class="karte">
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="E-Mail" />
+    <input type="password" id="password" placeholder="Passwort" />
+    <button onclick="login()">Einloggen</button>
+    <p id="login-error" style="color:red;"></p>
+  </div>
+
+  <div id="app" style="display:none;">
+    <div class="karte">
+      <img src="logo.png" class="logo" />
+      <div class="adminpanel-link" id="adminLink" onclick="toggleAdminPanel()">Adminpanel</div>
+      <div class="initialen" id="initialen"></div>
+      <div class="inhalt">
+        <h2 id="name"></h2>
+        <p><strong>Urlaubstage übrig:</strong> <span id="urlaub"></span></p>
+        <p><strong>Geleistete Stunden:</strong> <span id="stunden"></span></p>
+        <p><strong>Überstunden:</strong> <span id="ueberstunden"></span></p>
+      </div>
+    </div>
+
+    <div id="adminpanel" style="display:none;">
+      <h3>Mitarbeiter hinzufügen</h3>
+      <input type="text" id="newName" placeholder="Name" />
+      <input type="email" id="newEmail" placeholder="E-Mail" />
+      <input type="password" id="newPassword" placeholder="Passwort" />
+      <button onclick="addUser()">Hinzufügen</button>
+      <div id="userList"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
